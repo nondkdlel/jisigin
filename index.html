@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Jisigin ::</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Js -->
+    <script src="js/main.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+
+
+        $(function () {
+            $('#slider').slick({
+                slidesToShow: 2.5,
+                slidesToScroll: 1,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                arrows: true,
+                prevArrow: $(".prev-btn"),	// 이전 화살표 모양 설정
+                nextArrow: $(".next-btn"),	// 다음 화살표 모양 설정
+                responsive: [
+                    {
+                        breakpoint: 720,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding:'25px'
+                        }
+                    }
+                ]
+            });
+        });
+
+
+        // moblie 감지
+        jQuery(document).ready(function ($) {
+            if (isMobile) {
+               
+                $(".st-study .info-area").insertAfter(".st-study .study-mockup");
+                
+                $('.st-notice .slide-noti .noti-box .tit').each(function(){ 
+                    if ($(this).text().length > 30) 
+                    $(this).html($(this).text().substr(0,30)+"..."); 
+                });
+
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <a class="link" href="http://bitpos.io/" target="_blank">Bitpos 거래소 바로가기</a>
+            <div class="open-menu">
+                <div class="head">
+                </div> 
+                <div class="mu-list">
+                    <div class="mu-box">
+                        <p>회사소개</p>
+                        <ul>
+                            <li><a href="about_overview.html">회사개요</a></li>
+                            <li><a href="about_history.html">회사연혁</a></li>
+                            <li><a href="about_greeting.html">CEO 인사말</a></li>
+                            <li><a href="about_organization_chart.html">조직도</a></li>
+                            <li><a href="about_location.html">오시는 길</a></li>
+                        </ul>
+                    </div> <!-- end mu-box -->
+                    <div class="mu-box">
+                        <p>사업분야</p>
+                        <ul>
+                            <li><a href="business_block_chain.html">블록체인</a></li>
+                            <li><a href="business_exchange.html">암호화폐거래소</a></li>
+                            <li><a href="business_EUR_license.html">코인 EUR 라이센스</a></li>
+                            <li><a href="business_swiss_FINMA_consulting.html">Swiss FINMA Consulting</a></li>
+                            <li><a href="business_shopping_mall.html">쇼핑몰</a></li>
+                            <li><a href="business_education.html">LMS & LCMS</a></li>
+                            <li><a href="http://azilowon.com/" target="_blank">Coin White Paper</a></li>
+                        </ul>
+                    </div> <!-- end mu-box -->
+                    <div class="mu-box">
+                        <p>커뮤니티</p>
+                        <ul>
+                            <li><a href="community_news.html">뉴스</a></li>
+                            <li><a href="community_notice.html">공지사항</a></li>
+                            <li><a href="community_data_room.html">자료실</a></li>
+                            <li><a href="community_blog.html">BLOG</a></li>
+                        </ul>
+                    </div> <!-- end mu-box -->
+                    <div class="mu-box">
+                        <p>컨설팅</p>
+                        <ul>
+                            <li><a href="consulting_cryptocurrency.html">코인(암호화폐)</a></li>
+                            <li><a href="consulting_exchange.html">Exchange</a></li>
+                            <li><a href="consulting_wallet.html">전자지갑</a></li>
+                            <li><a href="consulting_platform.html">통합플랫폼</a></li>
+                        </ul>
+                    </div> <!-- end mu-box -->
+                </div> <!-- end mu-list -->
+            </div> <!-- end open-menu -->
+            <nav>
+                <div class="cm-menu">
+                    <a class="depth1" href="#">회사소개</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="about_overview.html">회사개요</a></li>
+                            <li><a href="about_history.html">회사연혁</a></li>
+                            <li><a href="about_greeting.html">CEO 인사말</a></li>
+                            <li><a href="about_organization_chart.html">조직도</a></li>
+                            <li><a href="about_location.html">오시는 길</a></li>
+                        </ul>
+                    </div> <!-- end depth2 -->
+                </div> <!-- end cm-menu -->
+                <div class="cm-menu">
+                    <a class="depth1" href="#">사업분야</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="business_block_chain.html">블록체인</a></li>
+                            <li><a href="business_exchange.html">암호화폐거래소</a></li>
+                            <li><a href="business_EUR_license.html">코인 EUR 라이센스</a></li>
+                            <li><a href="business_swiss_FINMA_consulting.html">Swiss FINMA Consulting</a></li>
+                            <li><a href="business_shopping_mall.html">쇼핑몰</a></li>
+                            <li><a href="business_education.html">LMS & LCMS</a></li>
+                            <li><a href="http://azilowon.com/" target="_blank">Coin White Paper</a></li>
+                        </ul>
+                    </div> <!-- end depth2 -->
+                </div> <!-- end cm-menu -->
+                <div class="cm-menu">
+                    <a class="depth1" href="#">커뮤니티</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="community_news.html">뉴스</a></li>
+                            <li><a href="community_notice.html">공지사항</a></li>
+                            <li><a href="community_data_room.html">자료실</a></li>
+                            <li><a href="community_blog.html">BLOG</a></li>
+                        </ul>
+                    </div> <!-- end depth2 -->
+                </div> <!-- end cm-menu -->
+                <div class="cm-menu">
+                    <a class="depth1" href="#">컨설팅</a>
+                    <div class="depth2">
+                        <ul>
+                            <li><a href="consulting_cryptocurrency.html">코인(암호화폐)</a></li>
+                            <li><a href="consulting_exchange.html">Exchange</a></li>
+                            <li><a href="consulting_wallet.html">전자지갑</a></li>
+                            <li><a href="consulting_platform.html">통합플랫폼</a></li>
+                        </ul>
+                    </div> <!-- end depth2 -->
+                </div> <!-- end cm-menu -->
+            </nav>
+            <div class="m-menu">
+                <div class="col">
+                    <div class="con">
+                        <div class="bar top"></div>
+                        <div class="bar middle"></div>
+                        <div class="bar bottom"></div>
+                    </div>
+                </div> <!-- end col -->
+            </div>
+            <input class="contact" type="button" value="1 : 1 문의하기">
+        </header>
+        <div id="main-visual">
+            <div class="container">
+                <div class="main-ct">
+                    <h1>Download the app to experience<br>
+                        convenient everyday life</h1>
+                    <div class="download-btn">
+                        <a class="app-btn" href="#">
+                            <img src="img/app_store_icon.png" alt="">
+                            <p>
+                                <span>Bitpos App</span><br>
+                                App Store
+                            </p>
+                        </a>
+                        <a class="app-btn" href="#">
+                            <img src="img/app_store_icon.png" alt="">
+                            <p>
+                                <span>Azilwon App</span><br>
+                                App Store
+                            </p>
+                        </a>
+                    </div> <!-- end download-btn -->
+                </div> <!-- end main-ct -->
+            </div> <!-- end container -->
+        </div> <!-- end main-visual -->
+        <section class="st-about">
+            <div class="container common-ct">
+                <div class="ab-content" data-aos="fade-down" data-aos-delay="100">
+                    <div class="ab-img"><img src="img/ab_ct_img1.png" alt=""></div>
+                    <div class="ab-txt">
+                        <h1>변화에 가장 먼저 발 맞추어 준비하는 회사</h1>
+                        <p>4차 산업혁명의 블록체인(Block Chain)과 암호화폐거래소 및 핀테크를 통해 더 나은 발전된 서비스를 제공합니다.</p>
+                    </div> <!-- end ab-txt -->
+                </div> <!-- end ab-content -->
+                <div class="ab-content" data-aos="fade-down" data-aos-delay="400">
+                    <div class="ab-img"><img src="img/ab_ct_img2.png" alt=""></div>
+                    <div class="ab-txt">
+                        <h1>전문성을 기반으로 안전성을 보장 할 수 있는 회사</h1>
+                        <p>전문성을 갖춘 체계적이고 안전한 시스템을 구현 & 설계합니다.</p>
+                    </div> <!-- end ab-txt -->
+                </div> <!-- end ab-content -->
+                <div class="ab-content" data-aos="fade-down" data-aos-delay="700">
+                    <div class="ab-img"><img src="img/ab_ct_img3.png" alt=""></div>
+                    <div class="ab-txt">
+                        <h1>고객의 관전에서 가장 먼저 바라보며 대응하는 회사</h1>
+                        <p>고객의 니즈에 맞는 안전한 시스템을 개발합니다.</p>
+                    </div> <!-- end ab-txt -->
+                </div> <!-- end ab-content -->
+            </div> <!-- end container -->
+        </section> <!-- end st-about -->
+        <section class="st-azilowon">
+            <div class="bg">
+                <div class="container">
+                    <div class="ct-txt" data-aos="fade-right" data-aos-delay="500">
+                        <h1>Azilowon Coin App 출시 !</h1>
+                        <p>언제 어디서나 간편하게 앱에서도 코인을 거래할 수 있습니다.<br>
+                            회원가입을 통해 더 많은 혜택이 준비되어 있습니다.</p>
+                        <p>앱 이용 시 불편한 점이 발생하는 경우 지식인과 소통해주세요.<br>
+                            고객의 피드백은 발전에 큰 힘이 됩니다.</p>
+                        <div class="download"><input type="button" value="Download App"></div>
+                    </div> <!-- end ct-txt-->
+                    <div class="ct-img" data-aos="fade-up-left" data-aos-delay="100">
+                        <img src="img/section_ct_01.png" alt="">
+                        <img class="m-img" src="img/m_section_ct_01.png" alt="">
+                    </div> <!-- end ct-img -->
+                </div> <!-- end container -->
+            </div> <!-- end bg -->
+        </section><!-- end st-azilowon -->
+        <section class="st-market clear">
+            <div class="ct-bg">
+                <div class="container">
+                    <div class="mall-info" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                        <h1>7marketplace shopping mall</h1>
+                        <p>4차 산업혁명의 새로운 기술인 블록체인 기술이 기반이 된 통합쇼핑몰로서,<br>
+                            보유한 코인을 가지고 물건 또는 교육을 받을 수 있는 솔루션입니다.<br>
+                            코인의 가치를 높이고, 고객의 삶 일부에 밀접하게 접촉하여 신뢰도를 쌓고<br>
+                            사업을 영위할 수 있는 새로운 플랫폼이라 할 수 있습니다.
+                        </p>
+                        <p>홈페이지 이용시 불편한 점이 발생하는 경우 지식인과 소통해주세요.<br>
+                            고객의 피드백은 발전에 큰 힘이 됩니다.</p>
+                        <div class="visit-btn"><input onclick="window.open('https://mall.azilowon.io/')" type="button"
+                                value="Visit website"></div>
+                    </div> <!-- end mall-info -->
+                </div> <!-- end container -->
+            </div>
+        </section> <!-- end st-market -->
+        <section class="st-study">
+            <div class="container">
+                <div class="info-area">
+                    <h1>
+                        <p>차세대 기술 블록체인이 도입된</p>
+                        LMS & LCMS
+                    </h1>
+                    <p class="sub-txt">온라인에서 학생들 성적과 진도는 물론 출석과 결석 등 학사 전반에 걸친 사항들을 관리해주는 시스템을 도입하였습니다. 학습 컨텐츠의 개발과 전달 ·
+                        평가 · 관리에 이르기까지 학습의 전반적인 과정을 통합적으로 운영 · 관리 할 수 있는 시스템으로, 학습관리 시스템 또는 학사관리운영플랫폼이라고도 합니다. 지식인이 운영하는
+                        다양한 교육 플랫폼을 지금 경험해보세요.</p>
+                    <div class="btn-group">
+                        <input type="button" value="Woongbo Edu View" onclick="window.open('http://gosispec.com/')">
+                        <input type="button" value="Land79 View" onclick="window.open('http://land79.co.kr/')">
+                    </div> <!-- end btn-group -->
+                </div> <!-- end info-area -->
+                <div class="study-mockup"><img src="img/section_ct_02.png" alt=""></div>
+            </div> <!-- end container -->
+        </section> <!-- end st-study -->
+        <section class="st-banner">
+            <div class="container">
+                <div class="ex-mockup"><img src="img/section_ct_03.png" alt=""></div>
+                <div class="tit-banner">
+                    <h1>Blockchain exchange </h1>
+                    <p>안전하고 신속하게 코인을 거래할 수 있도록 설계된<br>
+                        블록체인 거래소입니다. 웹사이트를 방문하여 경험해보세요.</p>
+                </div> <!-- end tit-banner -->
+            </div> <!-- end container -->
+        </section> <!-- end st-banner -->
+        <section class="m-aptitude">
+            <div class="container">
+                <div class="info-txt" data-aos="fade-right" data-aos-delay="300">
+                    <h1>모바일에서도 편리하게 !</h1>
+                    <div class="btn-group">
+                        <input type="button" value="웹으로 접속하기">
+                        <input type="button" value="모바일로 접속하기">
+                    </div> <!-- end btn-group -->
+                    <p>직업기초능력을 진단할 수 있는 홈페이지가 모바일에서도 서비스 됩니다. 간단한 검사문항을 통해 기초능력을 진단하여 진로에 대한 방향성을 바로 잡고 취업설계에 대해 도움
+                        받으세요. 지식인은 언제나 고객의 시선에서 도움되는 혜택과 서비스가 무엇인지를 가장 먼저 생각하겠습니다.</p>
+                </div> <!-- end info-txt -->
+                <div class="m-aptitude-img" data-aos="fade-down-left" data-aos-delay="100">
+                </div> <!-- end m-aptitude-img -->
+            </div> <!-- end container -->
+        </section> <!-- end m-aptitude -->
+        <section class="st-notice">
+            <div class="container">
+                <div class="st-tit">
+                    <h1>
+                        <p>community</p>
+                        Jisigin<br>
+                        Notice
+                    </h1>
+                    <a class="more-btn" href="community_notice.html">More view</a>
+                </div> <!-- end st-tit -->
+                <div class="ct-area">
+                    <div class="arrow-btn">
+                        <button class="prev-btn"><img src="img/prev_btn.png" alt=""></buttton>
+                            <button class="next-btn"><img src="img/next-btn.png" alt=""></button>
+                    </div> <!-- end arrow-btn -->
+                    <div id="slider" class="slide-noti">
+                        <div class="noti-box">
+                            <p class="tit">[ 공지 ] 거래소와 쇼핑몰을 한번에 ! 7marketplace 오픈</p>
+                            <p class="nt-content">고객님이 소유하고 있는 코인으로 쉽고 간편하게 결제 가능한 7marketplace가 오픈했습니다. 고객님 삶에 한층 더
+                                가까워질 수 있는 지식인이 되도록 노력하겠습니다. 감사...</p>
+                            <div class="btm-ct">
+                                <span class="date">2019 / 11 / 18</span>
+                                <a href="#" class="link"><img src="img/link_btn.png" alt=""></a>
+                            </div> <!-- end btm-ct -->
+                        </div> <!-- end noti-box -->
+                        <div class="noti-box">
+                            <p class="tit">[ 공지 ] 거래소와 쇼핑몰을 한번에 ! 7marketplace 오픈</p>
+                            <p class="nt-content">고객님이 소유하고 있는 코인으로 쉽고 간편하게 결제 가능한 7marketplace가 오픈했습니다. 고객님 삶에 한층 더
+                                가까워질 수 있는 지식인이 되도록 노력하겠습니다. 감사...</p>
+                            <div class="btm-ct">
+                                <span class="date">2019 / 11 / 18</span>
+                                <a href="#" class="link"><img src="img/link_btn.png" alt=""></a>
+                            </div> <!-- end btm-ct -->
+                        </div> <!-- end noti-box -->
+                        <div class="noti-box">
+                            <p class="tit">[ 공지 ] 거래소와 쇼핑몰을 한번에 ! 7marketplace 오픈</p>
+                            <p class="nt-content">고객님이 소유하고 있는 코인으로 쉽고 간편하게 결제 가능한 7marketplace가 오픈했습니다. 고객님 삶에 한층 더
+                                가까워질 수 있는 지식인이 되도록 노력하겠습니다. 감사...</p>
+                            <div class="btm-ct">
+                                <span class="date">2019 / 11 / 18</span>
+                                <a href="#" class="link"><img src="img/link_btn.png" alt=""></a>
+                            </div> <!-- end btm-ct -->
+                        </div> <!-- end noti-box -->
+                        <div class="noti-box">
+                            <p class="tit">[ 공지 ] 거래소와 쇼핑몰을 한번에 ! 7marketplace 오픈</p>
+                            <p class="nt-content">고객님이 소유하고 있는 코인으로 쉽고 간편하게 결제 가능한 7marketplace가 오픈했습니다. 고객님 삶에 한층 더
+                                가까워질 수 있는 지식인이 되도록 노력하겠습니다. 감사...</p>
+                            <div class="btm-ct">
+                                <span class="date">2019 / 11 / 18</span>
+                                <a href="#" class="link"><img src="img/link_btn.png" alt=""></a>
+                            </div> <!-- end btm-ct -->
+                        </div> <!-- end noti-box -->
+                    </div> <!-- end slider -->
+                </div> <!-- end ct-area -->
+            </div> <!-- end container -->
+        </section> <!-- end st-notice -->
+        <footer>
+            <div class="sns-area">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook_icon.png" alt="">
+                            <p>FACEBOOK</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instargram_icon.png" alt="">
+                            <p>INSTARGRAM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/tel_icon.png" alt="">
+                            <p>CONTACT US</p>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end sns-area -->
+            <div class="foot-wrap">
+                <div class="foot-cate">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">이메일</a></li>
+                        <li><a href="">무단수집거부</a></li>
+                        <li><a href="">상생경영</a></li>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">오시는길</a></li>
+                    </ul>
+                </div> <!-- end foot-cate -->
+                <div class="m-foot-cate">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div> <!-- end m-foot-cate -->
+                <div class="info-area container">
+                    <div class="company-info">
+                        <p class="cm-txt">회사명 (주) 지식인<span>|</span>주소 서울특별시 구로구 도림천로 448 예성유토피아 201동 603호</p>
+                        <p class="cm-txt">대표 정정수<span>|</span>사업자등록번호 119-86-32227 <span>|</span>02-867-8118</p>
+                        <p class="cm-txt">통신판매신고번호 제 2019-서울강남-01540호<span>|</span> 원격평생교육번호 제 760호<span>|</span>벤처기업확인번호 제2018108472호
+                        </p>
+                        <p class="copyright">&copy; 2010 JISIGIN ALL RIGHTS REVERED.</p>
+                    </div> <!-- end company-info -->
+                    <div class="qr-code"><img src="img/qr_code.jpg" alt=""></div>
+                </div> <!-- end info-area -->
+            </div> <!-- end foot-wrap -->
+        </footer>
+    </div> <!-- end wrap -->
+    <script>
+        AOS.init({
+            // easing: 'ease-out-back',
+            duration: 1000
+        });
+
+    </script>
+</body>
+
+</html>

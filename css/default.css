@@ -1,0 +1,287 @@
+/* default.css */
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+@font-face {
+    font-family: 'Swagger';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Swagger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Thin.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Thin.woff') format('woff');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Thin.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Light.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Light.woff') format('woff');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Regular.woff') format('woff');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Medium.woff') format('woff');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Medium.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Bold.woff2') format('woff2');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Bold.woff') format('woff');
+    src: url('../fonts/SpoqaHanSans/SpoqaHanSansNeo-Bold.ttf') format('ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans','Noto Sans KR', 'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    font-size: 10px !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+button {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+input[type="button"] {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+input[type="text"],input[type="password"], input[type="email"], input[type="search"],
+input[type="image"], input[type="tel"], input[type="button"], textarea{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+input::placeholder {
+    color: #999;
+}
+select {
+    /*ios대응*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../img/select_arrow.png") no-repeat 95% 50% #fff;
+}
+select::-ms-expand {
+    display:none; /* 기존 화살표 없애기 */
+}
+
+/* align */
+
+.align-left {
+    text-align: left !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.align-top {
+    vertical-align: top !important;
+}
+
+.align-bottom {
+    vertical-align: bottom !important;
+}
+
+/* display */
+
+.block {
+    display: block
+}
+
+.in-block {
+    display: inline-block;
+}
+
+/* width */
+
+.width-10 {
+    width: 10% !important;
+}
+
+.width-15 {
+    width: 15% !important;
+}
+
+.width-20 {
+    width: 20% !important;
+}
+
+.width-25 {
+    width: 25% !important;
+}
+
+.width-30 {
+    width: 30% !important;
+}
+
+.width-35 {
+    width: 35% !important;
+}
+
+.width-40 {
+    width: 40% !important;
+}
+
+.width-45 {
+    width: 45% !important;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.width-55 {
+    width: 55% !important;
+}
+
+.width-60 {
+    width: 60% !important;
+}
+
+.width-65 {
+    width: 65% !important;
+}
+
+.width-70 {
+    width: 70% !important;
+}
+
+.width-75 {
+    width: 75% !important;
+}
+
+.width-80 {
+    width: 80% !important;
+}
+
+.width-85 {
+    width: 85% !important;
+}
+
+.width-90 {
+    width: 90% !important;
+}
+
+.width-95 {
+    width: 95% !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+/* font */
+
+.font-0 {
+    font-size: 0;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* background */
+
+.bg-img {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mg-auto {
+    margin: 0 auto;
+}
+.ct-box {
+    border-radius: 1.2rem;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgba(208,210,211,.2),-4px -4px 8px rgba(208,210,211,.2);
+}
+.cm-btn input {
+    background: #121296;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+}
+.clear {
+    clear: both;
+}
